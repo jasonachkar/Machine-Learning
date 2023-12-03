@@ -1,0 +1,96 @@
+----------------------------------------------------------------------------------------------------
+(A) Model: Base DT - Default parameters
+
+(B) Confusion Matrix:
+          Predicted 0  Predicted 1  Predicted 2
+Actual 0           34            2            0
+Actual 1            0           18            0
+Actual 2            0            0           30
+
+(C) Precision, Recall, and F1-Measure for Each Class:
+   Precision    Recall  F1-Score  Support
+0        1.0  0.944444  0.971429       36
+1        0.9  1.000000  0.947368       18
+2        1.0  1.000000  1.000000       30
+
+(D) Accuracy: 0.9762
+Macro-average F1: 0.9729
+Weighted-average F1: 0.9765
+
+----------------------------------------------------------------------------------------------------
+(A) Model: Top DT - Best hyperparameters: {'criterion': 'gini', 'max_depth': 8, 'min_samples_split': 2}
+
+(B) Confusion Matrix:
+          Predicted 0  Predicted 1  Predicted 2
+Actual 0           34            2            0
+Actual 1            0           18            0
+Actual 2            0            0           30
+
+(C) Precision, Recall, and F1-Measure for Each Class:
+   Precision    Recall  F1-Score  Support
+0        1.0  0.944444  0.971429       36
+1        0.9  1.000000  0.947368       18
+2        1.0  1.000000  1.000000       30
+
+(D) Accuracy: 0.9762
+Macro-average F1: 0.9729
+Weighted-average F1: 0.9765
+
+----------------------------------------------------------------------------------------------------
+(A) Model: Base MLP - hidden_layer_sizes=(100,100), activation=logistic, solver=sgd
+
+(B) Confusion Matrix:
+          Predicted 0  Predicted 1  Predicted 2
+Actual 0           36            0            0
+Actual 1           18            0            0
+Actual 2           30            0            0
+
+(C) Precision, Recall, and F1-Measure for Each Class:
+   Precision  Recall  F1-Score  Support
+0   0.428571     1.0       0.6       36
+1   0.000000     0.0       0.0       18
+2   0.000000     0.0       0.0       30
+
+(D) Accuracy: 0.4286
+Macro-average F1: 0.2000
+Weighted-average F1: 0.2571
+
+----------------------------------------------------------------------------------------------------
+(A) Model: Top MLP - Best hyperparameters: {'activation': 'logistic', 'hidden_layer_sizes': (50,), 'solver': 'adam'}
+
+(B) Confusion Matrix:
+          Predicted 0  Predicted 1  Predicted 2
+Actual 0           32            0            4
+Actual 1           18            0            0
+Actual 2            0            0           30
+
+(C) Precision, Recall, and F1-Measure for Each Class:
+   Precision    Recall  F1-Score  Support
+0   0.640000  0.888889  0.744186       36
+1   0.000000  0.000000  0.000000       18
+2   0.882353  1.000000  0.937500       30
+
+(D) Accuracy: 0.7381
+Macro-average F1: 0.5606
+Weighted-average F1: 0.6538
+
+-------- Running all models 5 times leads to the following averages: 
+
+(A) Average accuracy: 0.9690476190476189, variance: 3.401360544217663e-05 
+(B) Average macro: 0.9666722758428502, variance: 2.6125525603616933e-05 
+(C) Average weighted: 0.9691308405419413, variance: 3.5976457217017206e-05 
+-------- Running all models 5 times leads to the following averages: 
+
+(A) Average accuracy: 0.9595238095238094, variance: 3.401360544217726e-05 
+(B) Average macro: 0.9553113764060231, variance: 4.58647218226927e-05 
+(C) Average weighted: 0.9598468096728002, variance: 3.4944923210426404e-05 
+-------- Running all models 5 times leads to the following averages: 
+
+(A) Average accuracy: 0.42857142857142855, variance: 0.0 
+(B) Average macro: 0.19999999999999998, variance: 0.0 
+(C) Average weighted: 0.2571428571428571, variance: 0.0 
+-------- Running all models 5 times leads to the following averages: 
+
+(A) Average accuracy: 0.6547619047619048, variance: 0.03718820861678005 
+(B) Average macro: 0.49021322311401, variance: 0.07033336875774512 
+(C) Average weighted: 0.5519369074697693, variance: 0.06524507410625362 
