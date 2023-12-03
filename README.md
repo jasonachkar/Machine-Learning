@@ -1,2 +1,13 @@
 # Machine-Learning
-This is an example of a machine learning algorithm that takes in data and outputs readable tables and graphs
+How to run:
+Install the following libraries if not available in current environment:
+
+pandas
+numpy
+matplotlib
+sklearn
+The datasets need to be stored as follows for the current path to work:
+
+Create a directory called Datasets containing the penguins.csv file and the abalone.csv file and store it in the same directory as the assignment_1.ipynb file. Otherwise, the path will not be correct. Alternatively, you may change the parameter for the path for each of these datasets to reflect where the folders are stored in your environment.
+
+Run the assignment_1.ipynb notebook.
